@@ -19,6 +19,11 @@ I.time_ms('query_time_in_ms') do
   post = Post.find(1)
 end
 
+I.synchronous = true
+User.find_each do |user|
+  I.increment('signups', 1, user.created_at)
+end
+
 ```
 
 ```
