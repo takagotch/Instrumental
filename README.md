@@ -32,6 +32,11 @@ before "deploy:migrations", "instrumental:util:depoly_start"
 after "deploy:migrations", "instrumental:util:deploy_end"
 after "instrumental:util:deploy_end", "instrumental:record_deploy_notice"
 
+I = Instrumental::Agent.new('PROJECT_API_TOKEN',
+  :enabled => Rails.env.production?
+  :metrician => false
+)
+
 ```
 
 ```
