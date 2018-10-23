@@ -24,6 +24,14 @@ User.find_each do |user|
   I.increment('signups', 1, user.created_at)
 end
 
+set :instrumental_key, "MY_API_KE"
+
+before "deploy", "instrumental:util:depoly_start"
+after "deploy", "instrumental:util:deploy_end"
+before "deploy:migrations", "instrumental:util:depoly_start"
+after "deploy:migrations", "instrumental:util:deploy_end"
+after "instrumental:util:deploy_end", "instrumental:record_deploy_notice"
+
 ```
 
 ```
