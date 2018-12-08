@@ -1,6 +1,10 @@
 ### Instrumental
 ---
+.rb
 https://github.com/Instrumental
+
+.java
+https://instrumentalapp.com/
 
 #### instrumental_agent-ruby
 ```
