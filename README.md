@@ -1,13 +1,14 @@
 ### Instrumental
 ---
-.rb
-https://github.com/Instrumental
 
 .java
 https://instrumentalapp.com/
 
 .rb
 https://github.com/Instrumental/instrumental_agent-ruby
+
+https://github.com/Instrumental
+
 
 #### instrumental_agent-ruby
 ```sh
