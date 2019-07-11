@@ -6,8 +6,11 @@ https://github.com/Instrumental
 .java
 https://instrumentalapp.com/
 
+.rb
+https://github.com/Instrumental/instrumental_agent-ruby
+
 #### instrumental_agent-ruby
-```
+```sh
 gem 'instrumental_agent'
 
 ```
@@ -44,7 +47,14 @@ I = Instrumental::Agent.new('PROJECT_API_TOKEN',
 ```
 
 ```
-
+[
+  "id": 1,
+  "name": "Deploy",
+  "project_id": 2,
+  "position": 0,
+  "created_at": "2016-01-29T22:15.122Z",
+  "updated_at": "2016-01-29T22:15:12.122Z"
+]
 ```
 
 
